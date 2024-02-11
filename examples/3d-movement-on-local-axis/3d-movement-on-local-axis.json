@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "3D Movement on local axis Example",
     "description": "This project is an example of the \"3D Movement on local axis\" and \"3D Movement on local axis of camera\" extensions.",
     "author": "",
@@ -190,7 +190,7 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Movement3D",
+              "name": "Movement3dOnLocalAxis",
               "type": "Movement3dOnLocalAxis::Movement3dOnLocalAxis",
               "Object3D": "Object3D"
             }
@@ -218,7 +218,7 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Movement3D",
+              "name": "Movement3dOnLocalAxis",
               "type": "Movement3dOnLocalAxis::Movement3dOnLocalAxis",
               "Object3D": "Object3D"
             }
@@ -346,6 +346,26 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Pitch: W and S key \nYaw: A and D key\nRoll: Q and E key\nFire: Space key",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "255;255;255"
           }
         }
       ],
@@ -439,7 +459,7 @@
                   },
                   "parameters": [
                     "Rock",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"X\"",
                     "RandomFloatInRange(500, 2000)",
                     ""
@@ -468,7 +488,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"X\"",
                     "300",
                     ""
@@ -496,7 +516,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"Y\"",
                     "-45",
                     ""
@@ -524,7 +544,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"Y\"",
                     "45",
                     ""
@@ -552,7 +572,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"Z\"",
                     "-45",
                     ""
@@ -580,7 +600,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"Z\"",
                     "45",
                     ""
@@ -608,7 +628,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"X\"",
                     "45",
                     ""
@@ -636,7 +656,7 @@
                   },
                   "parameters": [
                     "Spaceship",
-                    "Movement3D",
+                    "Movement3dOnLocalAxis",
                     "\"X\"",
                     "-45",
                     ""
@@ -1085,10 +1105,6 @@
         {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Movement3D",
-          "type": "Movement3dOnLocalAxis::Movement3dOnLocalAxis"
         },
         {
           "name": "Movement3dOnLocalAxis",
@@ -10559,7 +10575,6 @@
               "description": "",
               "group": "Color",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartColor"
             },
             {
@@ -10569,7 +10584,6 @@
               "description": "",
               "group": "Color",
               "extraInformation": [],
-              "hidden": false,
               "name": "EndColor"
             },
             {
@@ -10580,7 +10594,6 @@
               "description": "",
               "group": "Color",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartOpacity"
             },
             {
@@ -10591,7 +10604,6 @@
               "description": "",
               "group": "Color",
               "extraInformation": [],
-              "hidden": false,
               "name": "EndOpacity"
             },
             {
@@ -10601,7 +10613,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "Flow"
             },
             {
@@ -10612,7 +10623,6 @@
               "description": "",
               "group": "Size",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartSizeMin"
             },
             {
@@ -10623,7 +10633,6 @@
               "description": "",
               "group": "Size",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartSizeMax"
             },
             {
@@ -10634,7 +10643,6 @@
               "description": "",
               "group": "Size",
               "extraInformation": [],
-              "hidden": false,
               "name": "EndScale"
             },
             {
@@ -10645,7 +10653,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartSpeedMin"
             },
             {
@@ -10656,7 +10663,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "StartSpeedMax"
             },
             {
@@ -10667,7 +10673,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "LifespanMin"
             },
             {
@@ -10678,7 +10683,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "LifespanMax"
             },
             {
@@ -10689,7 +10693,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "Duration"
             },
             {
@@ -10699,7 +10702,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "AreParticlesRelative"
             },
             {
@@ -10710,7 +10712,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "SpayConeAngle"
             },
             {
@@ -10726,7 +10727,6 @@
                 "Multiply",
                 "None"
               ],
-              "hidden": false,
               "name": "Blending"
             },
             {
@@ -10739,7 +10739,6 @@
                 "Y-",
                 "Z+"
               ],
-              "hidden": false,
               "name": "GravityTop"
             },
             {
@@ -10750,7 +10749,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "Gravity"
             },
             {
@@ -10760,7 +10758,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ShouldAutodestruct"
             },
             {
@@ -10781,7 +10778,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "Z"
             },
             {
@@ -10792,7 +10788,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "RotationX"
             },
             {
@@ -10803,7 +10798,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "RotationY"
             }
           ],
@@ -11980,7 +11974,6 @@
               "extraInformation": [
                 "Scene3D::Base3DBehavior"
               ],
-              "hidden": false,
               "name": "Object3D"
             }
           ],
