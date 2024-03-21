@@ -1,0 +1,4913 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": false,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "300b5ab8-3e9a-4c39-af59-8472c12f0746",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "0.1.0",
+    "name": "3D position to screen position example",
+    "description": "",
+    "author": "PANDAKO",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "Zu55H5hcb9YmZTltIVOTAFDJQyB2"
+    ],
+    "authorUsernames": [
+      "PANDAKO"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/Cat.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Cat.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Colorful Monsters/Blob/68ebd8be44683b6eb5b6f4a06e0c7f9bb9a40c6ab5f8c291ab1cb93187fffe76_Cat.glb",
+          "name": "Cat.glb"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Talking Emote.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Talking Emote.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Emotes by Tomcat94/466f7e8476847c006747e3b5ea4f839b328c728735badaa76664763e80daa4cf_Talking Emote.png",
+          "name": "Talking Emote.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Very Happy Emote.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Very Happy Emote.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Emotes by Tomcat94/a40781bf0255cfb7c9f2a1744b91cfc80d77e3f33c4cb5805e5af9a063cc90d9_Very Happy Emote.png",
+          "name": "Very Happy Emote.png"
+        }
+      },
+      {
+        "file": "assets/Dog.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Dog.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Colorful Monsters/Blob/252e8301a5ca89e9a04f27e3081351827df4c70359318bd5a0e9aac8f08998b6_Dog.glb",
+          "name": "Dog.glb"
+        }
+      },
+      {
+        "file": "assets/Tent Small Open.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Tent Small Open.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Nature/Building/434660e05a4e7905ef9270be285a6d2bb90750ef8c2309308e70a2e601d2ffc5_Tent Small Open.glb",
+          "name": "Tent Small Open.glb"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Grass1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "85be5683bde687f5ee621cb6af57e360aeb18d6f74b2a14db8eeb4cffe93251e_tiled_Grass1.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Tileable Ground Textures/85be5683bde687f5ee621cb6af57e360aeb18d6f74b2a14db8eeb4cffe93251e_tiled_Grass1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/camera.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\camera.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Decoration Sign 3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Decoration Sign 3.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Sushi Restaurant/Decoration/0aa14515292e4a24d4ff1c7d437f2f184fc935e0c31b5572d54cfb1ca77aa580_Decoration Sign 3.glb",
+          "name": "Decoration Sign 3.glb"
+        }
+      },
+      {
+        "file": "assets/Tuna.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Tuna.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Sushi Restaurant/Food/cc63cbb4372eca913204762b91bc4b36dcc382bf6fbf628a25501141c9dceacc_Tuna.glb",
+          "name": "Tuna.glb"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Basic_32example",
+      "name": "Basic example",
+      "r": 79,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 163,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.26364576737708045,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 1,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Cat",
+          "persistentUuid": "7e800d95-e949-465b-9d47-13129fe69510",
+          "width": 0,
+          "x": 95,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "2D Layer",
+          "name": "TalkingEmote",
+          "persistentUuid": "ce323dab-4705-486f-853e-37049e2481bb",
+          "width": 64,
+          "x": -100,
+          "y": 50,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "2D Layer",
+          "name": "Checkpoint",
+          "persistentUuid": "bbdcb719-9d62-4a32-98e4-15b8b1de62b9",
+          "width": 0,
+          "x": -133,
+          "y": 123,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Dog",
+          "persistentUuid": "3d9815ea-d6ab-4c35-8303-032a9b192474",
+          "width": 0,
+          "x": 1190,
+          "y": 419,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "2D Layer",
+          "name": "VeryHappyEmote",
+          "persistentUuid": "7c81f4b6-ad00-4ed0-ab92-b98ef3acb9c8",
+          "width": 64,
+          "x": -100,
+          "y": 110,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 91,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Tent",
+          "persistentUuid": "e040aa61-d198-44a7-9c48-4894276d231d",
+          "width": 0,
+          "x": 712,
+          "y": -375,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.1,
+          "height": 2000,
+          "layer": "",
+          "name": "Ground",
+          "persistentUuid": "f079e19b-1fb8-4fb6-b7b1-f436b7595655",
+          "width": 2000,
+          "x": -330,
+          "y": -646,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Player",
+          "persistentUuid": "ee330f84-e23f-4425-ab32-01965078dc90",
+          "width": 0,
+          "x": 600,
+          "y": 300,
+          "z": 64,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "3D Layer",
+          "name": "DecorationSign",
+          "persistentUuid": "40fb24f5-bb90-4324-8b11-fe74c28d3888",
+          "rotationX": 90,
+          "rotationY": -90,
+          "width": 0,
+          "x": -83,
+          "y": 180,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Tuna",
+          "persistentUuid": "00871428-07ca-4929-9805-e2d2db929452",
+          "width": 0,
+          "x": 687,
+          "y": 910,
+          "z": 200,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "2D Layer",
+          "name": "Message",
+          "persistentUuid": "7d204a67-e67d-404f-92bb-b9a3fee0cc0c",
+          "width": 0,
+          "x": 20,
+          "y": 20,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "595ad91855b17f75ff78bc52a044a125d46ef868a77dc2a5f3bf1b7a65a1ae56",
+          "name": "Cat",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ModelOrigin",
+            "depth": 63,
+            "height": 63,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "Cat.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 63,
+            "animations": [
+              {
+                "loop": true,
+                "name": "Walk",
+                "source": "Walk"
+              },
+              {
+                "loop": true,
+                "name": "Idle",
+                "source": "Idle"
+              },
+              {
+                "loop": false,
+                "name": "Jump",
+                "source": "Jump"
+              },
+              {
+                "loop": false,
+                "name": "Death",
+                "source": "Death"
+              },
+              {
+                "loop": false,
+                "name": "Bite",
+                "source": "Bite_Front"
+              },
+              {
+                "loop": false,
+                "name": "ReceiveHit",
+                "source": "HitRecieve"
+              },
+              {
+                "loop": false,
+                "name": "Dance",
+                "source": "Dance"
+              },
+              {
+                "loop": false,
+                "name": "No",
+                "source": "No"
+              },
+              {
+                "loop": false,
+                "name": "Yes",
+                "source": "Yes"
+              }
+            ]
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "ae148325575f49a2a19e33708f1b7b87c6b327601bcb2c790abfef85b4846ff1",
+          "name": "TalkingEmote",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Talking Emote.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 4,
+                        "y": 13
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 4,
+                        "y": 13
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 13
+                          },
+                          {
+                            "x": 2,
+                            "y": 13
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Checkpoint",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Checkpoint",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Checkpoint",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "f95b110b14ee030300ddf5c175fb36f82a5d338170ac3924df12bec6af34534f",
+          "name": "VeryHappyEmote",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Very Happy Emote.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 4,
+                        "y": 13
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 4,
+                        "y": 13
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 13
+                          },
+                          {
+                            "x": 2,
+                            "y": 13
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "127a25bef7c32c947058fde5bd5a5c25e55ff8aae2dd3e1d06082e9c60007b66",
+          "name": "Dog",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ModelOrigin",
+            "depth": 64,
+            "height": 64,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "Dog.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 64,
+            "animations": [
+              {
+                "loop": true,
+                "name": "Dance",
+                "source": "Dance"
+              },
+              {
+                "loop": true,
+                "name": "Idle",
+                "source": "Idle"
+              },
+              {
+                "loop": true,
+                "name": "Walk",
+                "source": "Walk"
+              },
+              {
+                "loop": false,
+                "name": "Jump",
+                "source": "Jump"
+              },
+              {
+                "loop": false,
+                "name": "Death",
+                "source": "Death"
+              },
+              {
+                "loop": true,
+                "name": "Bite",
+                "source": "Bite_Front"
+              },
+              {
+                "loop": false,
+                "name": "ReceiveHit",
+                "source": "HitRecieve"
+              },
+              {
+                "loop": false,
+                "name": "No",
+                "source": "No"
+              },
+              {
+                "loop": false,
+                "name": "Yes",
+                "source": "Yes"
+              }
+            ]
+          }
+        },
+        {
+          "assetStoreId": "1d853fe4cd60a67c55408357669fca3c390214c63f8f8e8f1d60b6e403c36456",
+          "name": "Tent",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ModelOrigin",
+            "depth": 112.22616434097299,
+            "height": 109.51999425888064,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "Tent Small Open.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": -90,
+            "width": 133.27999711036688,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Ground",
+          "type": "Scene3D::Cube3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "width": 100,
+            "height": 100,
+            "depth": 0.1,
+            "enableTextureTransparency": false,
+            "facesOrientation": "Y",
+            "frontFaceResourceName": "85be5683bde687f5ee621cb6af57e360aeb18d6f74b2a14db8eeb4cffe93251e_tiled_Grass1.png",
+            "backFaceResourceName": "",
+            "backFaceUpThroughWhichAxisRotation": "X",
+            "leftFaceResourceName": "",
+            "rightFaceResourceName": "",
+            "topFaceResourceName": "",
+            "bottomFaceResourceName": "",
+            "frontFaceVisible": true,
+            "backFaceVisible": false,
+            "leftFaceVisible": false,
+            "rightFaceVisible": false,
+            "topFaceVisible": false,
+            "bottomFaceVisible": false,
+            "frontFaceResourceRepeat": true,
+            "backFaceResourceRepeat": false,
+            "leftFaceResourceRepeat": false,
+            "rightFaceResourceRepeat": false,
+            "topFaceResourceRepeat": false,
+            "bottomFaceResourceRepeat": false,
+            "materialType": "Basic"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Player",
+          "type": "Scene3D::Cube3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Walk3D",
+              "type": "Walk3D::Walk3D",
+              "RotationSpeedMax": 180,
+              "RotationAcceleration": 720,
+              "RotationDeceleration": 720,
+              "TranslationSpeedMax": 400,
+              "TranslationAcceleration": 1600,
+              "TranslationDeceleration": 1600,
+              "CurrentRotationSpeed": 0,
+              "PreviousRotationSpeed": 0,
+              "CurrentForwardSpeed": 0,
+              "CurrentSidewaysSpeed": 0,
+              "PreviousForwardSpeed": 0,
+              "PreviousSidewaysSpeed": 0,
+              "HasPressedTurnLeft": false,
+              "HasPressedTurnRight": false,
+              "HasPressedTurnLeftLast": false,
+              "HadPressedTurnLeft": false,
+              "HadPressedTurnRight": false,
+              "HasPressedMoveForward": false,
+              "HasPressedMoveBackward": false,
+              "HadPressedMoveForward": false,
+              "HadPressedMoveBackward": false,
+              "HasPressedMoveBackwardLast": false,
+              "HasPressedMoveLeft": false,
+              "HasPressedMoveRight": false,
+              "HadPressedMoveLeft": false,
+              "HadPressedMoveRight": false,
+              "HasPressedMoveLeftLast": false,
+              "TargetedForwardSpeed": 0,
+              "TargetedSidewaysSpeed": 0,
+              "TargetedRotationSpeed": 0
+            }
+          ],
+          "content": {
+            "width": 100,
+            "height": 100,
+            "depth": 100,
+            "enableTextureTransparency": true,
+            "facesOrientation": "Y",
+            "frontFaceResourceName": "assets\\camera.png",
+            "backFaceResourceName": "",
+            "backFaceUpThroughWhichAxisRotation": "X",
+            "leftFaceResourceName": "",
+            "rightFaceResourceName": "",
+            "topFaceResourceName": "",
+            "bottomFaceResourceName": "",
+            "frontFaceVisible": true,
+            "backFaceVisible": false,
+            "leftFaceVisible": false,
+            "rightFaceVisible": false,
+            "topFaceVisible": false,
+            "bottomFaceVisible": false,
+            "frontFaceResourceRepeat": false,
+            "backFaceResourceRepeat": false,
+            "leftFaceResourceRepeat": false,
+            "rightFaceResourceRepeat": false,
+            "topFaceResourceRepeat": false,
+            "bottomFaceResourceRepeat": false,
+            "materialType": "Basic"
+          }
+        },
+        {
+          "assetStoreId": "86bf7a93de14da4ff0c27988bd0d58ad6e629c039f91e89af8abb52a235f99e8",
+          "name": "DecorationSign",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ModelOrigin",
+            "depth": 94,
+            "height": 94,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "Decoration Sign 3.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 94,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "ee80acd5cda15d486c604cb9431b74f4e6c5ff4f0c1a652507b939ffa5cd848f",
+          "name": "Tuna",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ModelOrigin",
+            "depth": 75.04576742649078,
+            "height": 156.49025738239288,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "Tuna.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 19.631151109933903,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Message",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Arrow keys to move.",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Arrow keys to move.",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Cat"
+          },
+          {
+            "objectName": "Dog"
+          },
+          {
+            "objectName": "Tent"
+          },
+          {
+            "objectName": "Tuna"
+          },
+          {
+            "objectName": "DecorationSign"
+          },
+          {
+            "objectName": "Ground"
+          },
+          {
+            "objectName": "Player"
+          },
+          {
+            "objectName": "TalkingEmote"
+          },
+          {
+            "objectName": "VeryHappyEmote"
+          },
+          {
+            "objectName": "Checkpoint"
+          },
+          {
+            "objectName": "Message"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene3D::SetCameraZ"
+              },
+              "parameters": [
+                "",
+                "=",
+                "50",
+                "",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene3D::SetCameraRotationX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "90",
+                "",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Up"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
+              },
+              "parameters": [
+                "Player",
+                "Walk3D",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Down"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
+              },
+              "parameters": [
+                "Player",
+                "Walk3D",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Walk3D::Walk3D::SimulateTurnLeftKey"
+              },
+              "parameters": [
+                "Player",
+                "Walk3D",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Walk3D::Walk3D::SimulateTurnRightKey"
+              },
+              "parameters": [
+                "Player",
+                "Walk3D",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Convert3dToScreenPosition::Overlap"
+              },
+              "parameters": [
+                "",
+                "TalkingEmote",
+                "",
+                "Cat",
+                "Object3D",
+                "0",
+                "0",
+                "64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Convert3dToScreenPosition::Overlap"
+              },
+              "parameters": [
+                "",
+                "VeryHappyEmote",
+                "",
+                "Dog",
+                "Object3D",
+                "0",
+                "0",
+                "64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Convert3dToScreenPosition::Overlap"
+              },
+              "parameters": [
+                "",
+                "Checkpoint",
+                "",
+                "Tent",
+                "Object3D",
+                "0",
+                "0",
+                "130",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Convert3dToScreenPosition::Overlap"
+              },
+              "parameters": [
+                "",
+                "DecorationSign",
+                "",
+                "Tuna",
+                "Object3D",
+                "0",
+                "0",
+                "-50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene3D::Base3DBehavior::SetRotationY"
+              },
+              "parameters": [
+                "DecorationSign",
+                "Object3D",
+                "+",
+                "90 * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "FirstPersonCamera::LookFromObjectEyes"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "2D Layer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "3D Layer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Object3D",
+          "type": "Scene3D::Base3DBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Walk3D",
+          "type": "Walk3D::Walk3D",
+          "Cos": 0,
+          "Sin": 0
+        }
+      ]
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "Camera",
+      "extensionNamespace": "",
+      "fullName": "First person 3D camera",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjcsMTZjMCwwLTQuOSw3LTExLDdTNSwxNiw1LDE2czQuOS03LDExLTdTMjcsMTYsMjcsMTZ6Ii8+DQo8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIxNiIgY3k9IjE2IiByPSIzIi8+DQo8cG9seWxpbmUgY2xhc3M9InN0MCIgcG9pbnRzPSIzLDkgMywzIDksMyAiLz4NCjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjksMjkgMywyOSAzLDIzICIvPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMjksMjMgMjksMjkgMjMsMjkgIi8+DQo8cG9seWxpbmUgY2xhc3M9InN0MCIgcG9pbnRzPSIyMywzIDI5LDMgMjksOSAiLz4NCjwvc3ZnPg0K",
+      "name": "FirstPersonCamera",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Security and Protection/e8248ffd504c314e6a9d9d560c3a0fdad3398a5f125ae6a4c0654d4e68c86376_Security and Protection_security_protection_eye_scan_lock.svg",
+      "shortDescription": "Move the camera to look though objects eyes.",
+      "version": "1.0.1",
+      "description": [
+        "Move the camera to look though objects eyes.",
+        "",
+        "This extension can be used with the \"Mouse pointer lock\" or \"Gamepad\" extension to build a first person camera."
+      ],
+      "origin": {
+        "identifier": "FirstPersonCamera",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "3d",
+        "camera",
+        "fps"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Move the camera to look though _PARAM1_ eyes. The object must look to the right when all its angles are 0 and the top of its head be toward Z+.",
+          "fullName": "Look through object eyes",
+          "functionType": "Action",
+          "group": "Layers and cameras",
+          "name": "LookFromObjectEyes",
+          "sentence": "Move the camera of _PARAM2_ to look though _PARAM1_ eyes",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraZ"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "Object.Z()",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraZ"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "Object.Z()",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraRotationX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "- Object.RotationY() + 90",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraRotationY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "Object.RotationX()",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "Object.Angle() + 90",
+                    "GetArgumentAsString(\"Layer\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Scene3D::Cube3DObject",
+              "type": "objectList"
+            },
+            {
+              "description": "Layer",
+              "name": "Layer",
+              "type": "layer"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "3D walk",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXdhbGsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQuMTIsMTBIMTlWOC4ySDE1LjM4TDEzLjM4LDQuODdDMTMuMDgsNC4zNyAxMi41NCw0LjAzIDExLjkyLDQuMDNDMTEuNzQsNC4wMyAxMS41OCw0LjA2IDExLjQyLDQuMTFMNiw1LjhWMTFINy44VjcuMzNMOS45MSw2LjY3TDYsMjJINy44TDEwLjY3LDEzLjg5TDEzLDE3VjIySDE0LjhWMTUuNTlMMTIuMzEsMTEuMDVMMTMuMDQsOC4xOE0xNCwzLjhDMTUsMy44IDE1LjgsMyAxNS44LDJDMTUuOCwxIDE1LDAuMiAxNCwwLjJDMTMsMC4yIDEyLjIsMSAxMi4yLDJDMTIuMiwzIDEzLDMuOCAxNCwzLjhaIiAvPjwvc3ZnPg==",
+      "name": "Walk3D",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/941323cf01b837b2eb512ecbf0a95add8a195b3696eb6f5865dc090e526dc9b3_walk.svg",
+      "shortDescription": "Turn and move objects forward and sideways.",
+      "version": "0.1.0",
+      "description": "Move objects forward and sideways arrording to the direction they're facing.",
+      "origin": {
+        "identifier": "Walk3D",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "3d"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2",
+        "oc974hW1zSYZfAnRbpKoXizqc1D3",
+        "3qThSVKAPdP03MXTWNpe2QaNxpv1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Turn and move objects forward and sideways.",
+          "fullName": "3D walk",
+          "name": "Walk3D",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Rotation",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyPreviousRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "CurrentRotationSpeed"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHasPressedTurnRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeftLast"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "-RotationSpeedMax"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeftLast"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "RotationSpeedMax"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "<",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "max(CurrentRotationSpeed - RotationAcceleration * TimeDelta(), TargetedRotationSpeed)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "max(CurrentRotationSpeed - (RotationAcceleration + RotationDeceleration) * TimeDelta(), TargetedRotationSpeed)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ">=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "min(CurrentRotationSpeed + RotationAcceleration * TimeDelta(), TargetedRotationSpeed)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "<",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "min(CurrentRotationSpeed + (RotationAcceleration + RotationDeceleration) * TimeDelta(), TargetedRotationSpeed)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ">=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "max(CurrentRotationSpeed - RotationDeceleration * TimeDelta(), 0)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyPreviousRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "<",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "min(CurrentRotationSpeed + RotationDeceleration * TimeDelta(), 0)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "(PreviousRotationSpeed + CurrentRotationSpeed) / 2 * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHadPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHadPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHadPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Walk3D::Walk3D::PropertyHasPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHadPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnLeft"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnRight"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetPropertyTargetedRotationSpeed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Translation",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Forward",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyPreviousForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "CurrentForwardSpeed"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveForward"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveBackwardLast"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "-TranslationSpeedMax"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveBackward"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveBackwardLast"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "TranslationSpeedMax"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "<",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentForwardSpeed - TranslationAcceleration * TimeDelta(), TargetedForwardSpeed)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentForwardSpeed - (TranslationAcceleration + TranslationDeceleration) * TimeDelta(), TargetedForwardSpeed)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentForwardSpeed + TranslationAcceleration * TimeDelta(), TargetedForwardSpeed)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentForwardSpeed + (TranslationAcceleration + TranslationDeceleration) * TimeDelta(), TargetedForwardSpeed)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentForwardSpeed - TranslationDeceleration * TimeDelta(), 0)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentForwardSpeed + TranslationDeceleration * TimeDelta(), 0)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHadPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHadPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveBackward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveForward"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedForwardSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Sideways",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyPreviousSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "CurrentSidewaysSpeed"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveRight"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveLeftLast"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "-TranslationSpeedMax"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveLeft"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Walk3D::Walk3D::PropertyHasPressedMoveLeftLast"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "TranslationSpeedMax"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "<",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentSidewaysSpeed - TranslationAcceleration * TimeDelta(), TargetedSidewaysSpeed)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentSidewaysSpeed - (TranslationAcceleration + TranslationDeceleration) * TimeDelta(), TargetedSidewaysSpeed)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentSidewaysSpeed + TranslationAcceleration * TimeDelta(), TargetedSidewaysSpeed)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentSidewaysSpeed + (TranslationAcceleration + TranslationDeceleration) * TimeDelta(), TargetedSidewaysSpeed)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ">=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "max(CurrentSidewaysSpeed - TranslationDeceleration * TimeDelta(), 0)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::PropertyPreviousSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "<",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "min(CurrentSidewaysSpeed + TranslationDeceleration * TimeDelta(), 0)"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHadPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHadPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Walk3D::Walk3D::PropertyHasPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHadPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveLeft"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveRight"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Walk3D::Walk3D::SetPropertyTargetedSidewaysSpeed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object",
+                            "(PreviousForwardSpeed + CurrentForwardSpeed) / 2 * TimeDelta()",
+                            "Object.Angle()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object",
+                            "(PreviousSidewaysSpeed + CurrentSidewaysSpeed) / 2 * TimeDelta()",
+                            "Object.Angle() + 90"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the turn left key.",
+              "fullName": "Simulate turn left key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateTurnLeftKey",
+              "sentence": "Simulate pressing turn left key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedTurnLeft"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnLeftLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnLeft"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the turn right key.",
+              "fullName": "Simulate turn right key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateTurnRightKey",
+              "sentence": "Simulate pressing turn right key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedTurnRight"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnLeftLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedTurnRight"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the move backward key.",
+              "fullName": "Simulate move backward key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateMoveBackwardKey",
+              "sentence": "Simulate pressing move backward key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedMoveBackward"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveBackwardLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveBackward"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the move forward key.",
+              "fullName": "Simulate move forward key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateMoveForwardKey",
+              "sentence": "Simulate pressing move forward key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedMoveForward"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveBackwardLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveForward"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the move left key.",
+              "fullName": "Simulate move left key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateMoveLeftKey",
+              "sentence": "Simulate pressing move left key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedMoveLeft"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveLeftLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveLeft"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a press of the move right key.",
+              "fullName": "Simulate move right key press",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateMoveRightKey",
+              "sentence": "Simulate pressing move right key for _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Walk3D::Walk3D::PropertyHadPressedMoveRight"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveLeftLast"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyHasPressedMoveRight"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a stick control.",
+              "fullName": "Simulate stick control",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateMoveStick",
+              "sentence": "Simulate a stick control for _PARAM0_ with a _PARAM2_ angle and a _PARAM3_ force",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Denormilize the targeted speed.\nIt projects the circle on a square with sides length of the circle diameter."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetSharedPropertyCos"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "cos(ToRad(-Angle))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetSharedPropertySin"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "sin(ToRad(-Angle))"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "abs(Cos)",
+                        ">=",
+                        "abs(Sin)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTargetedSidewaysSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Force * TranslationSpeedMax * sign(Cos)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTargetedForwardSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Force * TranslationSpeedMax * Sin / abs(Cos)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "abs(Cos)",
+                        "<=",
+                        "abs(Sin)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTargetedSidewaysSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Force * TranslationSpeedMax * Cos / abs(Sin)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTargetedForwardSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Force * TranslationSpeedMax * sign(Sin)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Stick angle (in degrees)",
+                  "name": "Angle",
+                  "type": "expression"
+                },
+                {
+                  "description": "Stick force (between 0 and 1)",
+                  "name": "Force",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Simulate a stick control for rotation.",
+              "fullName": "Simulate stick control for rotation",
+              "functionType": "Action",
+              "group": "Top-down walk state",
+              "name": "SimulateRotationStick",
+              "sentence": "Simulate a stick control for rotation of _PARAM0_ with an axis value of _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTargetedRotationSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value * RotationSpeedMax"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Axis value (between -1 and 1)",
+                  "name": "Value",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the current rotation speed of the object.",
+              "fullName": "Current rotation speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk state",
+              "name": "CurrentRotationSpeed",
+              "sentence": "the current rotation speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "CurrentRotationSpeed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "CurrentRotationSpeed",
+              "name": "SetCurrentRotationSpeed",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyCurrentRotationSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the current forward speed of the object.",
+              "fullName": "Current forward speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk state",
+              "name": "CurrentForwardSpeed",
+              "sentence": "the current forward speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "CurrentForwardSpeed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "CurrentForwardSpeed",
+              "name": "SetCurrentForwardSpeed",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyCurrentForwardSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the current sideways speed of the object.",
+              "fullName": "Current sideways speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk state",
+              "name": "CurrentSidewaysSpeed",
+              "sentence": "the current sideways speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "CurrentSidewaysSpeed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "CurrentSidewaysSpeed",
+              "name": "SetCurrentSidewaysSpeed",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyCurrentSidewaysSpeed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the maximum rotation speed of the object.",
+              "fullName": "Maximum rotation speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "RotationSpeedMax",
+              "sentence": "the maximum rotation speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "RotationSpeedMax"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "RotationSpeedMax",
+              "name": "SetRotationSpeedMax",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyRotationSpeedMax"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the rotation acceleration of the object.",
+              "fullName": "Rotation acceleration",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "RotationAcceleration",
+              "sentence": "the rotation acceleration",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "RotationAcceleration"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "RotationAcceleration",
+              "name": "SetRotationAcceleration",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyRotationAcceleration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the rotation deceleration of the object.",
+              "fullName": "Rotation deceleration",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "RotationDeceleration",
+              "sentence": "the rotation deceleration",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "RotationDeceleration"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "RotationDeceleration",
+              "name": "SetRotationDeceleration",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyRotationDeceleration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the maximum speed of the object.",
+              "fullName": "Maximum speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "TranslationSpeedMax",
+              "sentence": "the maximum speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "TranslationSpeedMax"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "TranslationSpeedMax",
+              "name": "SetTranslationSpeedMax",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTranslationSpeedMax"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the acceleration of the object.",
+              "fullName": "Acceleration",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "TranslationAcceleration",
+              "sentence": "the acceleration",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "TranslationAcceleration"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "TranslationAcceleration",
+              "name": "SetTranslationAcceleration",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTranslationAcceleration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the deceleration of the object.",
+              "fullName": "Deceleration",
+              "functionType": "ExpressionAndCondition",
+              "group": "Top-down walk configuration",
+              "name": "TranslationDeceleration",
+              "sentence": "the deceleration",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "TranslationDeceleration"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "TranslationDeceleration",
+              "name": "SetTranslationDeceleration",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SetPropertyTranslationDeceleration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Walk3D::Walk3D",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "180",
+              "type": "Number",
+              "unit": "AngularSpeed",
+              "label": "Maximum rotation speed",
+              "description": "",
+              "group": "Rotation",
+              "extraInformation": [],
+              "name": "RotationSpeedMax"
+            },
+            {
+              "value": "720",
+              "type": "Number",
+              "label": "Rotation acceleration",
+              "description": "",
+              "group": "Rotation",
+              "extraInformation": [],
+              "name": "RotationAcceleration"
+            },
+            {
+              "value": "720",
+              "type": "Number",
+              "label": "Rotation deceleration",
+              "description": "",
+              "group": "Rotation",
+              "extraInformation": [],
+              "name": "RotationDeceleration"
+            },
+            {
+              "value": "400",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Maximum speed",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "TranslationSpeedMax"
+            },
+            {
+              "value": "1600",
+              "type": "Number",
+              "unit": "PixelAcceleration",
+              "label": "Acceleration",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "TranslationAcceleration"
+            },
+            {
+              "value": "1600",
+              "type": "Number",
+              "unit": "PixelAcceleration",
+              "label": "Deceleration",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "TranslationDeceleration"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "AngularSpeed",
+              "label": "Current rotation speed",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentRotationSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousRotationSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Current forward speed",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentForwardSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Current sideways speed",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentSidewaysSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousForwardSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousSidewaysSpeed"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedTurnLeft"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedTurnRight"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedTurnLeftLast"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedTurnLeft"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedTurnRight"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveForward"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveBackward"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedMoveForward"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedMoveBackward"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveBackwardLast"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveLeft"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveRight"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedMoveLeft"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HadPressedMoveRight"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "HasPressedMoveLeftLast"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TargetedForwardSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TargetedSidewaysSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TargetedRotationSpeed"
+            }
+          ],
+          "sharedPropertyDescriptors": [
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Cos"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "Sin"
+            }
+          ]
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "",
+      "category": "",
+      "extensionNamespace": "",
+      "fullName": "Convert 3D position to screen position",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI0LDEwLjljMCw3LTgsMTMuMS04LDEzLjFzLTgtNi4xLTgtMTMuMUM4LDYuNSwxMS42LDMsMTYsM1MyNCw2LjUsMjQsMTAuOXoiLz4NCjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE2IiBjeT0iMTEiIHI9IjIiLz4NCjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjE5LjIsMjEgMjUsMjEgMjksMjkgMywyOSA3LDIxIDEyLjgsMjEgIi8+DQo8L3N2Zz4NCg==",
+      "name": "Convert3dToScreenPosition",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Maps and Navigation/5f308b28df69a05ce442f41f469dbeeae407726098ae481cbc58efb4f3514fe6_Maps and Navigation_location_pin_map.svg",
+      "shortDescription": "This extension provides functionality to convert 3D position to screen position.",
+      "version": "0.1.0",
+      "description": [
+        "This extension provides functionality to convert 3D position to screen position.  ",
+        "",
+        "- \"Overlap\" action: Overlaps objects with a 3D object."
+      ],
+      "tags": [
+        "3D"
+      ],
+      "authorIds": [
+        "Zu55H5hcb9YmZTltIVOTAFDJQyB2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onSceneLoaded",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "if (gdjs.__Convert3dToScreenPosition) {",
+                "    return;",
+                "}",
+                "if (!runtimeScene.getLayer(\"\").getRenderer().getThreeCamera()) {",
+                "    return;",
+                "}",
+                "gdjs.__Convert3dToScreenPosition = new Map();",
+                "gdjs.__Convert3dToScreenPosition.set(\"convert\", (Layer, X, Y, Z)=>{",
+                "    const Camera3D = runtimeScene.getLayer(Layer).getRenderer().getThreeCamera();",
+                "    const Position3D = new THREE.Vector3(X, -Y, Z);",
+                "    const Project = Position3D.clone().project(Camera3D);",
+                "    const GameResolutionWidth = runtimeScene.getGame().getGameResolutionWidth();",
+                "    const GameResolutionHeight = runtimeScene.getGame().getGameResolutionHeight();",
+                "    const PointX = (GameResolutionWidth / 2) * (Project.x + 1.0);",
+                "    const PointY = (GameResolutionHeight / 2) * ((Project.y * -1) + 1.0);",
+                "    //",
+                "    const Frustum = new THREE.Frustum();",
+                "    const CloneCamera = Camera3D.clone();",
+                "    CloneCamera.rotateZ(gdjs.toRad(180));",
+                "    Frustum.setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(CloneCamera.projectionMatrix, CloneCamera.matrixWorldInverse));",
+                "    const Within = Frustum.containsPoint(Position3D);",
+                "    return [PointX, PointY, Within];",
+                "});"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Overlaps objects with a 3D object.\n⚠️ For objects to overlap correctly, they must be on a different layer than the 3D object.",
+          "fullName": "Overlap",
+          "functionType": "Action",
+          "group": "Position",
+          "name": "Overlap",
+          "sentence": "Overlap _PARAM1_ (Hide: _PARAM2_) and _PARAM3_ (Offset: _PARAM5_, _PARAM6_, _PARAM7_) objects.",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "if (!gdjs.__Convert3dToScreenPosition) {",
+                "    return;",
+                "}",
+                "const Object2Ds = eventsFunctionContext.getObjects(\"Object2D\");",
+                "const Hide = eventsFunctionContext.getArgument(\"Hide\");",
+                "const Object3D = eventsFunctionContext.getObjects(\"Object3D\")[0];",
+                "const OffsetX = eventsFunctionContext.getArgument(\"OffsetX\");",
+                "const OffsetY = eventsFunctionContext.getArgument(\"OffsetY\");",
+                "const OffsetZ = eventsFunctionContext.getArgument(\"OffsetZ\");",
+                "const Offset3D = new THREE.Vector3(OffsetX, OffsetY, OffsetZ);",
+                "const Layer3D = Object3D.layer;",
+                "const RendererObject3D = Object3D.get3DRendererObject();",
+                "if (!runtimeScene.getLayer(Layer3D).getRenderer().getThreeCamera()) {",
+                "    return;",
+                "}",
+                "//",
+                "let Position3D;",
+                "if (RendererObject3D) {",
+                "    // 3D",
+                "    Position3D = RendererObject3D.position.clone();",
+                "} else {",
+                "    // 2D",
+                "    Position3D = new THREE.Vector3(Object3D.getX(), Object3D.getY(), 0);",
+                "}",
+                "Position3D.add(Offset3D);",
+                "for (const Object2D of Object2Ds) {",
+                "    const Result = gdjs.__Convert3dToScreenPosition.get(\"convert\")(Layer3D, Position3D.x, Position3D.y, Position3D.z);",
+                "    Object2D.setPosition(Result[0], Result[1]);",
+                "    Object2D.hide(!Result[2]);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "2D Object",
+              "name": "Object2D",
+              "type": "objectList"
+            },
+            {
+              "defaultValue": "yes",
+              "description": "Hide when behind the 3D camera",
+              "longDescription": "Hide 2D objects when 3D objects are behind the 3D camera.",
+              "name": "Hide",
+              "optional": true,
+              "type": "yesorno"
+            },
+            {
+              "description": "Target 3D Object",
+              "name": "Object3D",
+              "type": "objectList"
+            },
+            {
+              "description": "3D Capability",
+              "name": "Capability3D",
+              "supplementaryInformation": "Scene3D::Base3DBehavior",
+              "type": "behavior"
+            },
+            {
+              "description": "X Offset",
+              "name": "OffsetX",
+              "type": "expression"
+            },
+            {
+              "description": "Y Offset",
+              "name": "OffsetY",
+              "type": "expression"
+            },
+            {
+              "description": "Z Offset",
+              "name": "OffsetZ",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
